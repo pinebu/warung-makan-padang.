@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f1e0b6; /* Background warna terang */
+    border: 10px solid #d4a023; /* Bingkai emas padang */
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-image: url('images/hiasan.jpg'); /* Gambar hiasan rumah makan padang */
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: #d4a023;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.menu-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-item:hover .menu-overlay {
+    opacity: 1;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+.menu-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: left;
+    color: #333;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #d4a023;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d4a023;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c68c1f;
+}
+
+.menu-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
